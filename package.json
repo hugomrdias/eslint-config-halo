@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-halo",
+  "version": "0.1.0",
+  "description": "ESlint shareable config for Halo",
+  "license": "MIT",
+  "repository": "hugomrdias/eslint-config-halo",
+  "author": {
+    "name": "Hugo Dias",
+    "email": "mail@hugodias.me",
+    "url": "hugodias.me"
+  },
+  "keywords": [
+    "eslintconfig",
+    "halo",
+    "lint",
+    "linter",
+    "eslint"
+  ],
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "release:patch": "npm version patch -m \"chore(release): Bump to %s\"",
+    "release:minor": "npm version minor -m \"chore(release): Bump to %s\"",
+    "release:major": "npm version major -m \"chore(release): Bump to %s\"",
+    "postversion": "npm publish && git push --follow-tags"
+  },
+  "main": "index.js",
+}
