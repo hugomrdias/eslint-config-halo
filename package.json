@@ -25,5 +25,5 @@
     "release:major": "npm version major -m \"chore(release): Bump to %s\"",
     "postversion": "npm publish && git push --follow-tags"
   },
-  "main": "index.js",
+  "main": "index.js"
 }
