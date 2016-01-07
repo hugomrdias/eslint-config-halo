@@ -197,7 +197,7 @@ module.exports = {
         'sort-vars': 0,
         'space-after-keywords': [2, 'always'],
         'space-before-keywords': [2, 'always'],
-        'space-before-blocks': [0, 'always'],
+        'space-before-blocks': [2, 'always'],
         'space-before-function-paren': [2, {
             'anonymous': 'never',
             'named': 'never'
