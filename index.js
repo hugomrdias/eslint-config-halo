@@ -176,7 +176,7 @@ module.exports = {
         'new-cap': 2,
         'new-parens': 2,
         'newline-after-var': [2, 'always'],
-        'newline-per-chained-call': 2,
+        'newline-per-chained-call': 0,
         'no-array-constructor': 2,
         'no-bitwise': 0,
         'no-continue': 2,
