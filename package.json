@@ -41,10 +41,10 @@
     "release:minor": "npm version minor -m \"chore(release): Bump to %s\"",
     "release:major": "npm version major -m \"chore(release): Bump to %s\"",
     "postversion": "npm publish && git push --follow-tags",
-    "lint": "eslint --cache --fix index.js"
+    "test": "eslint --cache --fix index.js"
   },
   "devDependencies": {
-    "eslint": "2.1.0"
+    "eslint": "2.7.0"
   },
   "peerDependencies": {
     "eslint": ">=2"
