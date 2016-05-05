@@ -206,7 +206,7 @@ module.exports = {
         'operator-assignment': [2, 'always'],
         'operator-linebreak': [2, 'after'],
         'padded-blocks': [2, 'never'],
-        'quote-props': [2, 'consistent-as-needed'],
+        'quote-props': [2, 'consistent'],
         'quotes': [2, 'single'],
         'require-jsdoc': 0,
         'semi': [2, 'always'],
