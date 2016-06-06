@@ -31,10 +31,12 @@ module.exports = {
         'no-irregular-whitespace': 2,
         'no-negated-in-lhs': 2,
         'no-obj-calls': 2,
+        'no-prototype-builtins': 2,
         'no-regex-spaces': 2,
         'no-sparse-arrays': 2,
         'no-unexpected-multiline': 0,
         'no-unreachable': 2,
+        'no-unsafe-finally': 2,
         'use-isnan': 2,
         'valid-jsdoc': 0,
         'valid-typeof': 2,
@@ -131,7 +133,6 @@ module.exports = {
         'no-new-require': 2,
         'no-path-concat': 2,
         'no-process-exit': 0,
-        'no-restricted-imports': 0,
         'no-restricted-modules': 0,
         'no-sync': 0,
 
@@ -201,6 +202,7 @@ module.exports = {
         'no-unneeded-ternary': 2,
         'no-whitespace-before-property': 2,
         'object-curly-spacing': [2, 'always'],
+        'object-property-newline': 2,
         'one-var': [2, 'never'],
         'one-var-declaration-per-line': 2,
         'operator-assignment': [2, 'always'],
@@ -227,6 +229,7 @@ module.exports = {
         'spaced-comment': [2, 'always', {
             'exceptions': ['*']
         }],
+        'unicode-bom': 2,
         'wrap-regex': 0,
 
         // ECMAScript 6
@@ -241,8 +244,11 @@ module.exports = {
         'no-dupe-class-members': 2,
         'no-duplicate-imports': 2,
         'no-new-symbol': 2,
+        'no-restricted-imports': 0,
         'no-this-before-super': 2,
+        'no-useless-computed-key': 2,
         'no-useless-constructor': 2,
+        'no-useless-rename': 2,
         'no-var': 0,
         'object-shorthand': 0,
         'prefer-arrow-callback': 0,
