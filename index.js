@@ -156,7 +156,7 @@ module.exports = {
         'block-spacing': 0,
         'brace-style': [2, '1tbs', { allowSingleLine: false }],
         'camelcase': [2, { properties: 'always' }],
-        'capitalized-comments': 2,
+        'capitalized-comments': 0,
         'comma-dangle': [2, 'never'],
         'comma-spacing': [
             2,

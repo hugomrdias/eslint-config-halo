@@ -48,7 +48,7 @@
     "postversion": "npm publish && git push --follow-tags",
     "test": "eslint --cache --fix index.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "eslint": "~3.19.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-no-use-extend-native": "^0.3.12",
