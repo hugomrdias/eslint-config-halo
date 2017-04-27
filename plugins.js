@@ -28,12 +28,12 @@ module.exports = {
         // Looks useful, but too unstable at the moment
         // 'import/no-deprecated': 'error',
         'import/no-extraneous-dependencies': 'error',
-        'import/no-mutable-exports': 'error',
+        'import/no-mutable-exports': 'warn',
         'import/no-named-as-default-member': 'error',
         'import/no-named-as-default': 'error',
         'import/no-unresolved': ['error', { commonjs: true }],
-        'import/order': 'error',
-        'import/prefer-default-export': 'error',
+        'import/order': 'warn',
+        'import/prefer-default-export': 'warn',
         'import/no-unassigned-import': 'error'
     }
 };
