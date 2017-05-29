@@ -13,8 +13,6 @@ import configRouter from './modules/config/router';
 import usersRouter from './modules/generic/users/router';
 import InfoCard from './modules/app/components/info-card/info-card';
 
-
-
 App.info(
     'Movves ' +
         App.config.version +
@@ -43,7 +41,7 @@ App.start()
         configRouter();
         usersRouter();
 
-        App.router('*', ctx => {
+        App.router('*', (ctx) => {
             ctx.layout.changeTitle('Not found');
             ctx.layout.setContent(
                 new InfoCard({
@@ -56,3 +54,37 @@ App.start()
         return null;
     })
     .catch(App.notify);
+
+function s(col, key, level) {
+    level[key] = col.reduce(
+        (acc, item) => (item.level_id === level.id ? acc.concat(item.id) : acc),
+        []
+    );
+    return level;
+}
+
+function render(date, points) {
+    return `
+        <div style="padding-bottom: 6px">
+        ${date}
+        </div>
+        <table class="Tooltip-table">
+            ${points
+        .map(point => `<tr>
+                    <td>
+                    <span style="vertical-align:top;display:inline-block;color: ${point.seriesColor}">
+                        ${point.seriesSymbol}&nbsp;
+                    </span>
+                    <span style="vertical-align:top;display:inline-block;max-width:120px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+                        ${point.seriesName}
+                    </span>
+                        &nbsp; &nbsp;
+                    </td>
+                    <td style="line-height: 20px; text-align: right; font-weight: bold">
+                    ${point.y}
+                    </td>
+                </tr>`)
+        .join('')}
+        </table>
+        `;
+}

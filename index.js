@@ -54,13 +54,13 @@ module.exports = {
         'array-callback-return': 2,
         'block-scoped-var': 2,
         'class-methods-use-this': 0,
-        complexity: [0, 11],
+        'complexity': [0, 11],
         'consistent-return': 0,
-        curly: [2, 'all'],
+        'curly': [2, 'all'],
         'default-case': 2,
         'dot-notation': 2,
         'dot-location': [2, 'property'],
-        eqeqeq: [2, 'smart'],
+        'eqeqeq': [2, 'smart'],
         'guard-for-in': 2,
         'no-alert': 1,
         'no-caller': 2,
@@ -115,14 +115,14 @@ module.exports = {
         'no-warning-comments': 1,
         'no-with': 2,
         'prefer-promise-reject-errors': 2,
-        radix: 2,
+        'radix': 2,
         'require-await': 1,
         'vars-on-top': 2,
         'wrap-iife': [2, 'inside'],
-        yoda: 2,
+        'yoda': 2,
 
         // Strict Mode
-        strict: [2, 'global'],
+        'strict': [2, 'global'],
 
         // Variables
         'init-declarations': 0,
@@ -155,7 +155,7 @@ module.exports = {
         'array-bracket-spacing': [2, 'never'],
         'block-spacing': 0,
         'brace-style': [2, '1tbs', { allowSingleLine: false }],
-        camelcase: [2, { properties: 'always' }],
+        'camelcase': [2, { properties: 'always' }],
         'capitalized-comments': 0,
         'comma-dangle': [2, 'never'],
         'comma-spacing': [
@@ -176,7 +176,7 @@ module.exports = {
         'id-blacklist': 0,
         'id-length': 0,
         'id-match': 0,
-        indent: [2, 4, { SwitchCase: 1 }],
+        'indent': [2, 4, { SwitchCase: 1 }],
         'jsx-quotes': 2,
         'key-spacing': [
             2,
@@ -234,9 +234,9 @@ module.exports = {
         'operator-linebreak': [2, 'after'],
         'padded-blocks': [2, 'never'],
         'quote-props': [2, 'consistent'],
-        quotes: [2, 'single'],
+        'quotes': [2, 'single'],
         'require-jsdoc': 0,
-        semi: [2, 'always'],
+        'semi': [2, 'always'],
         'semi-spacing': [
             2,
             {
@@ -263,7 +263,11 @@ module.exports = {
         'wrap-regex': 0,
 
         // ECMAScript 6
-        'arrow-body-style': 1,
+        'arrow-body-style': [
+            2,
+            'as-needed',
+            { requireReturnForObjectLiteral: true }
+        ],
         'arrow-parens': [2, 'as-needed', { requireForBlockBody: true }],
         'arrow-spacing': [
             2,
