@@ -1,59 +1,61 @@
 {
-    "name": "eslint-config-halo",
-    "version": "2.0.12",
-    "description": "ESlint shareable config for Halo",
-    "license": "MIT",
-    "repository": "hugomrdias/eslint-config-halo",
-    "author": {
-        "name": "Hugo Dias",
-        "email": "mail@hugodias.me",
-        "url": "hugodias.me"
-    },
-    "keywords": [
-        "eslintconfig",
-        "halo",
-        "code",
-        "quality",
-        "style",
-        "lint",
-        "linter",
-        "jscs",
-        "jshint",
-        "jslint",
-        "eslint",
-        "validate",
-        "code style",
-        "standard",
-        "strict",
-        "check",
-        "checker",
-        "verify",
-        "enforce",
-        "hint",
-        "simple"
-    ],
-    "eslintConfig": {
-        "extends": ["./index.js"]
-    },
-    "main": "index.js",
-    "scripts": {
-        "release:patch": "npm version patch -m \"chore(release): Bump to %s\"",
-        "release:minor": "npm version minor -m \"chore(release): Bump to %s\"",
-        "release:major": "npm version major -m \"chore(release): Bump to %s\"",
-        "postversion": "npm publish && git push --follow-tags",
-        "test": "eslint --cache --fix index.js"
-    },
-    "dependencies": {
-        "babel-eslint": "^7.2.3",
-        "eslint": "^4.2.0",
-        "eslint-plugin-import": "^2.7.0",
-        "eslint-plugin-no-use-extend-native": "^0.3.12",
-        "eslint-plugin-promise": "^3.5.0",
-        "eslint-plugin-react": "^7.1.0",
-        "eslint-plugin-unicorn": "^2.1.2",
-        "prettier": "^1.5.3"
-    },
-    "peerDependencies": {
-        "eslint": "^4.2.0"
-    }
+  "name": "eslint-config-halo",
+  "version": "2.1.0",
+  "description": "ESlint shareable config for Halo",
+  "license": "MIT",
+  "repository": "hugomrdias/eslint-config-halo",
+  "author": {
+    "name": "Hugo Dias",
+    "email": "mail@hugodias.me",
+    "url": "hugodias.me"
+  },
+  "keywords": [
+    "eslintconfig",
+    "halo",
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "linter",
+    "jscs",
+    "jshint",
+    "jslint",
+    "eslint",
+    "validate",
+    "code style",
+    "standard",
+    "strict",
+    "check",
+    "checker",
+    "verify",
+    "enforce",
+    "hint",
+    "simple"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "./index.js"
+    ]
+  },
+  "main": "index.js",
+  "scripts": {
+    "release:patch": "npm version patch -m \"chore(release): Bump to %s\"",
+    "release:minor": "npm version minor -m \"chore(release): Bump to %s\"",
+    "release:major": "npm version major -m \"chore(release): Bump to %s\"",
+    "postversion": "npm publish && git push --follow-tags",
+    "test": "eslint --cache --fix index.js"
+  },
+  "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-no-use-extend-native": "^0.3.12",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-unicorn": "^2.1.2",
+    "prettier": "^1.5.3"
+  },
+  "peerDependencies": {
+    "eslint": "^4.2.0"
+  }
 }
