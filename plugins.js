@@ -1,13 +1,11 @@
 module.exports = {
     plugins: ['import', 'no-use-extend-native', 'promise', 'unicorn'],
-
     extends: [
         './index.js',
         'plugin:import/recommended',
         'plugin:promise/recommended',
         'plugin:unicorn/recommended'
     ],
-
     rules: {
         'no-use-extend-native/no-use-extend-native': 'error',
         'import/default': 'error',

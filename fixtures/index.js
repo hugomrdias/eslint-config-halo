@@ -70,7 +70,8 @@ function render(date, points) {
         </div>
         <table class="Tooltip-table">
             ${points
-        .map(point => `<tr>
+                .map(
+                    point => `<tr>
                     <td>
                     <span style="vertical-align:top;display:inline-block;color: ${point.seriesColor}">
                         ${point.seriesSymbol}&nbsp;
@@ -83,8 +84,9 @@ function render(date, points) {
                     <td style="line-height: 20px; text-align: right; font-weight: bold">
                     ${point.y}
                     </td>
-                </tr>`)
-        .join('')}
+                </tr>`
+                )
+                .join('')}
         </table>
         `;
 }

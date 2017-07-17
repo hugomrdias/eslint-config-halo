@@ -16,6 +16,8 @@ module.exports = {
     extends: 'eslint:recommended',
     rules: {
         // Possible Errors
+        'for-direction': 2,
+        'getter-return': 2,
         'no-await-in-loop': 2,
         'no-compare-neg-zero': 2,
         'no-cond-assign': 2,
@@ -109,7 +111,7 @@ module.exports = {
         'no-unused-labels': 2,
         'no-useless-call': 2,
         'no-useless-concat': 2,
-        'no-useless-escape': 0,
+        'no-useless-escape': 2,
         'no-useless-return': 1,
         'no-void': 2,
         'no-warning-comments': 1,
@@ -143,6 +145,7 @@ module.exports = {
         // 'callback-return': [1, ['cb', 'callback', 'next', 'done']],
         'global-require': 1,
         'handle-callback-err': 1,
+        'no-buffer-constructor': 2,
         'no-mixed-requires': [1, { grouping: true }],
         'no-new-require': 2,
         'no-path-concat': 2,
@@ -152,7 +155,9 @@ module.exports = {
         'no-sync': 0,
 
         // Stylistic Issues
+        'array-bracket-newline': [0, { multiline: true }],
         'array-bracket-spacing': [2, 'never'],
+        'array-element-newline': [0, { multiline: true }],
         'block-spacing': 0,
         'brace-style': [2, '1tbs', { allowSingleLine: false }],
         'camelcase': [2, { properties: 'always' }],
@@ -190,7 +195,6 @@ module.exports = {
         'line-comment-position': 0,
         'linebreak-style': [2, 'unix'],
         'lines-around-comment': 0,
-        'lines-around-directive': 2,
         'max-depth': [0, 4],
         'max-len': [0, 80, 4],
         'max-lines': 0,
@@ -201,15 +205,22 @@ module.exports = {
         'multiline-ternary': 0,
         'new-cap': 2,
         'new-parens': 2,
-        'newline-after-var': [2, 'always'],
-        'newline-before-return': 0,
         'newline-per-chained-call': 0,
         'no-array-constructor': 2,
         'no-bitwise': 0,
         'no-continue': 2,
         'no-inline-comments': 0,
         'no-lonely-if': 2,
-        'no-mixed-operators': 2,
+        'no-mixed-operators': [
+            2,
+            {
+                groups: [
+                    // prettier doesnt think this is usefull ["+", "-", "*", "/", "%", "**"]
+                    ['%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']
+                ],
+                allowSamePrecedence: true
+            }
+        ],
         'no-mixed-spaces-and-tabs': 2,
         'no-multi-assign': 2,
         'no-multiple-empty-lines': [2, { max: 1 }],
@@ -233,6 +244,34 @@ module.exports = {
         'operator-assignment': [2, 'always'],
         'operator-linebreak': [2, 'after'],
         'padded-blocks': [2, 'never'],
+        'padding-line-between-statements': [
+            'error',
+            {
+                blankLine: 'always',
+                prev: '*',
+                next: 'return'
+            },
+            {
+                blankLine: 'always',
+                prev: ['const', 'let', 'var'],
+                next: '*'
+            },
+            {
+                blankLine: 'any',
+                prev: ['const', 'let', 'var'],
+                next: ['const', 'let', 'var']
+            },
+            {
+                blankLine: 'always',
+                prev: 'directive',
+                next: '*'
+            },
+            {
+                blankLine: 'any',
+                prev: 'directive',
+                next: 'directive'
+            }
+        ],
         'quote-props': [2, 'consistent'],
         'quotes': [2, 'single'],
         'require-jsdoc': 0,
@@ -244,6 +283,7 @@ module.exports = {
                 after: true
             }
         ],
+        'semi-style': ['error', 'last'],
         'sort-keys': 0,
         'sort-vars': 0,
         'space-before-blocks': [2, 'always'],
@@ -258,16 +298,19 @@ module.exports = {
         'space-infix-ops': 2,
         'space-unary-ops': 2,
         'spaced-comment': [2, 'always', { exceptions: ['*'] }],
+        'switch-colon-spacing': [
+            'error',
+            {
+                after: true,
+                before: false
+            }
+        ],
         'template-tag-spacing': 2,
         'unicode-bom': 2,
         'wrap-regex': 0,
 
         // ECMAScript 6
-        'arrow-body-style': [
-            2,
-            'as-needed',
-            { requireReturnForObjectLiteral: true }
-        ],
+        'arrow-body-style': [2, 'as-needed', { requireReturnForObjectLiteral: true }],
         'arrow-parens': [2, 'as-needed', { requireForBlockBody: true }],
         'arrow-spacing': [
             2,
