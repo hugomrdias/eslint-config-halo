@@ -216,7 +216,11 @@ module.exports = {
             {
                 groups: [
                     // prettier doesnt think this is usefull ["+", "-", "*", "/", "%", "**"]
-                    ['%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']
+                    ['%', '**'],
+                    ['&', '|', '^', '~', '<<', '>>', '>>>'],
+                    ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+                    ['&&', '||'],
+                    ['in', 'instanceof']
                 ],
                 allowSamePrecedence: true
             }
@@ -310,7 +314,11 @@ module.exports = {
         'wrap-regex': 0,
 
         // ECMAScript 6
-        'arrow-body-style': [2, 'as-needed', { requireReturnForObjectLiteral: true }],
+        'arrow-body-style': [
+            2,
+            'as-needed',
+            { requireReturnForObjectLiteral: true }
+        ],
         'arrow-parens': [2, 'as-needed', { requireForBlockBody: true }],
         'arrow-spacing': [
             2,
