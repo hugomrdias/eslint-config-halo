@@ -14,7 +14,7 @@ $ yarn add eslint eslint-config-halo --dev
 
 Add some ESLint config to your `package.json`:
 
-```json
+```
 {
     "name": "my-awesome-project",
     "eslintConfig": {
@@ -44,28 +44,32 @@ halo:preact // extends above overrides some rules for preact
 
 ## Visual Studio Code 
 
-Install [vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [prettier-eslint-vscode](https://marketplace.visualstudio.com/items?itemName=RobinMalfait.prettier-eslint-vscode)
+Install [dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ```json
 {
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "prettier.eslintIntegration": true,
     "prettier.printWidth": 80,
     "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "prettier.semi": true,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "none",
     "prettier.bracketSpacing": true,
     "prettier.jsxBracketSameLine": false,
-    "prettier.semi": true,
-    "prettier.useTabs": false
+    "prettier.cssEnable": [],
 }
 ```
 
-vscode-eslint config should be the default this will make vscode-eslint highlight problems and prettier-eslint-vscode format on save
+Use the default settings for vscode-eslint and these to auto format using prettier and eslint.
 
 ## Related
 
 - [eslint:recommended](https://github.com/eslint/eslint/blob/master/conf/eslint.json) - ESLint recommended rules
-- [prettier-eslint-vscode](https://marketplace.visualstudio.com/items?itemName=RobinMalfait.prettier-eslint-vscode) Prettier ESlint plugin
-- [vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) ESlint plugin
+- [esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) Prettier plugin
+- [dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) ESlint plugin
 
 ## License
 
