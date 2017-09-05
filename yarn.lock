@@ -1419,9 +1419,9 @@ normalize-package-data@^2.3.2, normalize-package-data@^2.3.4:
     semver "2 || 3 || 4 || 5"
     validate-npm-package-license "^3.0.1"
 
-np@hugomrdias/np#feat/yarn-publish:
+np@^2.16.0:
   version "2.16.0"
-  resolved "https://codeload.github.com/hugomrdias/np/tar.gz/0acdc45201c22380fdbf3d8681a300e46010c1a0"
+  resolved "https://registry.yarnpkg.com/np/-/np-2.16.0.tgz#0cb8d0b98beb998b7ba8e8ce3ad12b07a46aee3c"
   dependencies:
     any-observable "^0.2.0"
     chalk "^1.1.3"

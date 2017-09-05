@@ -40,8 +40,7 @@
     "main": "index.js",
     "scripts": {
         "test": "eslint --cache *.js",
-        "format": "prettier-eslint --write \"*.+(js|json)\"",
-        "np": "np"
+        "format": "prettier-eslint --write \"*.+(js|json)\""
     },
     "dependencies": {
         "babel-eslint": "^7.2.3",
@@ -56,7 +55,7 @@
         "eslint": "^4.2.0"
     },
     "devDependencies": {
-        "np": "hugomrdias/np#feat/yarn-publish",
+        "np": "^2.16.0",
         "prettier": "1.6.1",
         "prettier-eslint-cli": "^4.3.0"
     }
