@@ -178,6 +178,7 @@ module.exports = {
         'func-name-matching': 1,
         'func-names': 0,
         'func-style': [0, 'declaration'],
+        'function-paren-newline': 0,
         'id-blacklist': 0,
         'id-length': 0,
         'id-match': 0,
@@ -351,7 +352,7 @@ module.exports = {
         'prefer-template': 0,
         'require-yield': 0,
         'rest-spread-spacing': 0,
-        'sort-imports': 0,
+        'sort-imports': 2,
         'symbol-description': 2,
         'template-curly-spacing': 2,
         'yield-star-spacing': [2, 'both']
