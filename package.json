@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-halo",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "ESlint shareable config for Halo",
     "license": "MIT",
     "repository": "hugomrdias/eslint-config-halo",
@@ -33,7 +33,9 @@
         "simple"
     ],
     "eslintConfig": {
-        "extends": ["./index.js"]
+        "extends": [
+            "./index.js"
+        ]
     },
     "main": "index.js",
     "scripts": {
