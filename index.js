@@ -352,7 +352,7 @@ module.exports = {
         'prefer-template': 0,
         'require-yield': 0,
         'rest-spread-spacing': 0,
-        'sort-imports': 2,
+        'sort-imports': 0,
         'symbol-description': 2,
         'template-curly-spacing': 2,
         'yield-star-spacing': [2, 'both']

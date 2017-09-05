@@ -33,9 +33,7 @@
         "simple"
     ],
     "eslintConfig": {
-        "extends": [
-            "./index.js"
-        ]
+        "extends": ["./index.js"]
     },
     "main": "index.js",
     "scripts": {

@@ -51,6 +51,7 @@ App.start()
             );
         });
         App.router.start();
+
         return null;
     })
     .catch(App.notify);
@@ -60,6 +61,7 @@ function s(col, key, level) {
         (acc, item) => (item.level_id === level.id ? acc.concat(item.id) : acc),
         []
     );
+
     return level;
 }
 
@@ -70,8 +72,8 @@ function render(date, points) {
         </div>
         <table class="Tooltip-table">
             ${points
-                .map(
-                    point => `<tr>
+        .map(
+            point => `<tr>
                     <td>
                     <span style="vertical-align:top;display:inline-block;color: ${point.seriesColor}">
                         ${point.seriesSymbol}&nbsp;
@@ -85,8 +87,8 @@ function render(date, points) {
                     ${point.y}
                     </td>
                 </tr>`
-                )
-                .join('')}
+        )
+        .join('')}
         </table>
         `;
 }
