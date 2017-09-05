@@ -33,9 +33,7 @@
         "simple"
     ],
     "eslintConfig": {
-        "extends": [
-            "./index.js"
-        ]
+        "extends": ["./index.js"]
     },
     "main": "index.js",
     "scripts": {
@@ -52,7 +50,9 @@
         "eslint-plugin-unicorn": "^2.1.2"
     },
     "peerDependencies": {
-        "eslint": "^4.6.0"
+        "eslint": "^4.6.0",
+        "prettier": "1.6.1",
+        "prettier-eslint-cli": "^4.3.0"
     },
     "devDependencies": {
         "np": "^2.16.0",
