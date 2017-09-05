@@ -56,7 +56,7 @@
         "eslint": "^4.2.0"
     },
     "devDependencies": {
-        "np": "^2.16.0",
+        "np": "hugomrdias/np#feat/yarn-publish",
         "prettier": "1.6.1",
         "prettier-eslint-cli": "^4.3.0"
     }
