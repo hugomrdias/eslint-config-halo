@@ -60,7 +60,7 @@ module.exports = {
         'consistent-return': 0,
         'curly': [2, 'all'],
         'default-case': 2,
-        'dot-notation': 2,
+        'dot-notation': [2, { 'allowPattern': '^[a-z]+(_[a-z]+)+$' }],
         'dot-location': [2, 'property'],
         'eqeqeq': [2, 'smart'],
         'guard-for-in': 2,
