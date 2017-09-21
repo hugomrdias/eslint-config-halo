@@ -1,3 +1,13 @@
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/hugomrdias/eslint-config-halo/compare/v2.3.6...v2.4.0) (2017-09-21)
+
+
+### Features
+
+* add node config and change eslint peer version ([ca23695](https://github.com/hugomrdias/eslint-config-halo/commit/ca23695))
+
+
+
 <a name="2.3.6"></a>
 ## [2.3.6](https://github.com/hugomrdias/eslint-config-halo/compare/v2.3.5...v2.3.6) (2017-09-21)
 
