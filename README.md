@@ -3,6 +3,9 @@
 
 This is for advanced users.
 
+## Note to self
+
+keep eslint peer dep in the last version with new rules or options we support!
 
 ## Install
 

@@ -33,19 +33,16 @@
         "simple"
     ],
     "eslintConfig": {
-        "extends": [
-            "./index.js"
-        ]
+        "extends": ["./index.js"]
     },
     "main": "index.js",
-    "files": [
-        "*.js"
-    ],
+    "files": ["*.js"],
     "scripts": {
         "test": "eslint --cache *.js",
         "format": "prettier-eslint --write \"*.+(js|json)\"",
         "version": "yarn changelog && git add CHANGELOG.md",
-        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+        "changelog":
+            "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
         "find-rules": "npm-run-all --parallel find-rules:*",
         "find-rules:index": "eslint-find-rules -u index.js -i deprecated",
         "find-rules:plugins": "eslint-find-rules -u plugins.js -i deprecated",
@@ -68,7 +65,7 @@
         "prettier-eslint-cli": "^4.3.2"
     },
     "peerDependencies": {
-        "eslint": "^4.7.1",
+        "eslint": "^4.6.0",
         "eslint-plugin-import": "^2.7.0",
         "eslint-plugin-no-use-extend-native": "^0.3.12",
         "eslint-plugin-promise": "^3.5.0",
