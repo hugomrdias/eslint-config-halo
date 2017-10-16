@@ -1,3 +1,13 @@
+<a name="2.4.2"></a>
+## [2.4.2](https://github.com/hugomrdias/eslint-config-halo/compare/v2.4.1...v2.4.2) (2017-10-16)
+
+
+### Features
+
+* add h pragma to preact confgi ([045afed](https://github.com/hugomrdias/eslint-config-halo/commit/045afed))
+
+
+
 <a name="2.4.1"></a>
 ## [2.4.1](https://github.com/hugomrdias/eslint-config-halo/compare/v2.4.0...v2.4.1) (2017-09-21)
 

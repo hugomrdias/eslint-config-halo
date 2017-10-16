@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-halo",
-    "version": "2.4.1",
+    "version": "2.4.2",
     "description": "ESlint shareable config for Halo",
     "license": "MIT",
     "repository": "hugomrdias/eslint-config-halo",
@@ -33,16 +33,19 @@
         "simple"
     ],
     "eslintConfig": {
-        "extends": ["./plugins.js"]
+        "extends": [
+            "./plugins.js"
+        ]
     },
     "main": "index.js",
-    "files": ["*.js"],
+    "files": [
+        "*.js"
+    ],
     "scripts": {
         "test": "eslint --cache *.js",
         "format": "prettier-eslint --write \"*.+(js|json)\"",
         "version": "yarn changelog && git add CHANGELOG.md",
-        "changelog":
-            "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
         "find-rules": "npm-run-all --parallel find-rules:*",
         "find-rules:index": "eslint-find-rules -u index.js -i deprecated",
         "find-rules:plugins": "eslint-find-rules -u plugins.js -i deprecated",
